@@ -1,8 +1,11 @@
-package com.iterator.lessons;
-
+package test.java.iterator;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.Iterator;
 import org.junit.jupiter.api.Test;
+
+import main.java.iterator.Lesson;
+import main.java.iterator.Subject;
+import main.java.iterator.SubjectReading;
 
 class LessonIteratorTest {
 	static Subject reading = new SubjectReading();

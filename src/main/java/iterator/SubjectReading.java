@@ -1,5 +1,4 @@
-package com.iterator.lessons;
-
+package main.java.iterator;
 import java.util.Iterator;
 
 public class SubjectReading implements Subject {

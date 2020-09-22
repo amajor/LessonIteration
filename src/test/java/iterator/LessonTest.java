@@ -1,6 +1,8 @@
-package com.iterator.lessons;
-
+package test.java.iterator;
 import org.junit.jupiter.api.Test;
+
+import main.java.iterator.Lesson;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LessonTest {
@@ -20,7 +22,7 @@ class LessonTest {
 		assertEquals(lessonDescription, lesson.getDescription());
 		assertFalse(lesson.isCompleted());
 		
-		String expectedString = lessonName + "\n---------------\n" + lessonDescription;
+		String expectedString = "\n\n  [ ] " + lessonName + "\n      " + lessonDescription;
 		assertEquals(expectedString, lesson.toString());
 	}
 }

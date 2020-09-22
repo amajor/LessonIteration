@@ -1,8 +1,8 @@
-package com.iterator.lessons;
+package main.java.iterator;
 
 import java.util.Iterator;
 
-public class PrintTodoItems {
+public class PrintAllSubjects {
 	static Subject reading = new SubjectReading();
 
 	public static void main(String args[]) {
@@ -11,16 +11,14 @@ public class PrintTodoItems {
 	
 	public static void printSubjectLessons(Subject subject) {
 		Iterator lessonIterator = subject.createIterator();
-		printUnfinishedLessons(lessonIterator);
+		 printSubjectLessons(lessonIterator);
 	}
 	
-	private static void printUnfinishedLessons(Iterator iterator) {
-		System.out.println("\n\nTODO ITEMS\n----------\n\n");
+	private static void printSubjectLessons(Iterator iterator) {
+		System.out.println("\nSUBJECTS\n--------\n\nREADING");
 		while (iterator.hasNext()) {
 			Lesson lesson = (Lesson) iterator.next();
-			if (lesson.isUnfinished()) {
-				System.out.print(lesson.toString());
-			}
+			System.out.print(lesson.toString());
 		}
 	}
 }

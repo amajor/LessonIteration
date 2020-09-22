@@ -1,6 +1,9 @@
+[![Build Status](https://travis-ci.com/amajor/LessonIteration.svg?branch=master)](https://travis-ci.com/amajor/LessonIteration)
+
 # Lesson Iteration
 
-This is very simple system of Subject and Lessons to explore the Iterator Pattern.
+This is very simple system of Subject and Lessons to explore the Iterator
+Pattern.
 
 ## Iterator Pattern Definition
 
@@ -9,7 +12,8 @@ This is very simple system of Subject and Lessons to explore the Iterator Patter
 
 ## This Project
 
-**Subject** is an interface that holds lessons and can iterate through the lessons.
+**Subject** is an interface that holds lessons and can iterate through the
+lessons.
 
 **Lesson** has a name, description, and whether it has been completed. It can
 also be marked as completed. When printed to string, it includes a checkbox
@@ -24,5 +28,5 @@ To see the classes in action, we can run the different JUnit test files.
 * `LessonIteratorTest`
 
 We can also run `PrintAllSubjects` or `PrintTodoItems` to see different sets
-of data as indicated by the class names. This is just to get an idea of 
+of data as indicated by the class names. This is just to get an idea of
 what we're working with.
