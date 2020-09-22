@@ -22,7 +22,7 @@ class LessonTest {
 		assertEquals(lessonDescription, lesson.getDescription());
 		assertFalse(lesson.isCompleted());
 		
-		String expectedString = lessonName + "\n---------------\n" + lessonDescription;
+		String expectedString = "\n\n  [ ] " + lessonName + "\n      " + lessonDescription;
 		assertEquals(expectedString, lesson.toString());
 	}
 }
