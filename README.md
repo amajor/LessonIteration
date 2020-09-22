@@ -2,7 +2,7 @@
 
 # Lesson Iteration
 
-This is very simple system of Subject and Lessons to explore the Iterator
+This is a simple system of Subject and Lessons to explore the Iterator
 Pattern.
 
 ## Iterator Pattern Definition
@@ -12,20 +12,16 @@ Pattern.
 
 ## This Project
 
-**Subject** is an interface that holds lessons and can iterate through the
-lessons.
+**[Subject](https://github.com/amajor/LessonIteration/blob/master/src/main/java/iterator/Subject.java)** is an interface that holds lessons and can iterate through the lessons. **[SubjectReading](https://github.com/amajor/LessonIteration/blob/master/src/main/java/iterator/SubjectReading.java)** implements this interface.
 
-**Lesson** has a name, description, and whether it has been completed. It can
-also be marked as completed. When printed to string, it includes a checkbox
+**[Lesson](https://github.com/amajor/LessonIteration/blob/master/src/main/java/iterator/Lesson.java)** has a name, description, and whether it has been completed. It can also be marked as completed. When printed to string, it includes a checkbox
 next to the name to indicate if it has been completed.
 
-**LessonIterator** implements Iterator and overrides the `hasNext()` and
-`next` methods with its own implementations, enabling `Subject` to iterate
-without knowing what holds the data.
+**[LessonIterator](https://github.com/amajor/LessonIteration/blob/master/src/main/java/iterator/LessonIterator.java)** implements Iterator and overrides the `hasNext()` and `next` methods with its own implementations, enabling `Subject` to iterate without knowing what holds the data.
 
 To see the classes in action, we can run the different JUnit test files.
-* `LessonTest`
-* `LessonIteratorTest`
+* [LessonTest](https://github.com/amajor/LessonIteration/blob/master/src/test/java/iterator/LessonTest.java)
+* [LessonIteratorTest](https://github.com/amajor/LessonIteration/blob/master/src/test/java/iterator/LessonIteratorTest.java)
 
 We can also run `PrintAllSubjects` or `PrintTodoItems` to see different sets
 of data as indicated by the class names. This is just to get an idea of
