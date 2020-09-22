@@ -27,7 +27,15 @@ public class Lesson {
 		return completed;
 	}
 
+	public void markCompleted() {
+		completed = true;
+	}
+
 	public String toString() {
-		return ("\n\n  " + name + "\n  " + description);
+		String check = " ";
+		if (completed) {
+			check = "X";
+		}
+		return ("\n\n  [" + check + "] " + name + "\n      " + description);
 	}
 }
