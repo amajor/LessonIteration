@@ -27,6 +27,10 @@ public class Lesson {
 		return completed;
 	}
 
+	public boolean isUnfinished() {
+		return !completed;
+	}
+
 	public void markCompleted() {
 		completed = true;
 	}

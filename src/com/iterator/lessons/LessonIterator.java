@@ -19,5 +19,4 @@ public class LessonIterator implements Iterator {
 	public Object next() {
 		return lessons[position++];
 	}
-
 }
