@@ -1,4 +1,4 @@
-package com.iterator.lessons;
+package main.java.iterator;
 
 public class Lesson {
 	String name;

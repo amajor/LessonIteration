@@ -1,6 +1,8 @@
-package com.iterator.lessons;
-
+package test.java.iterator;
 import org.junit.jupiter.api.Test;
+
+import main.java.iterator.Lesson;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LessonTest {
